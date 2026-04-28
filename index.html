@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Sistem Pengaduan Sekolah</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pengaduan Sekolah</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="submission.html">Lapor</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tracking.html">Lacak</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faq.html">FAQ</a></li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light ms-3" id="mode-toggle">Dark Mode</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">Laporkan Masalah Sekolah Anda</h1>
+            <p class="lead">Bersama kita wujudkan lingkungan sekolah yang lebih baik.</p>
+            <a href="submission.html" class="btn btn-light btn-lg">Lapor Sekarang</a>
+        </div>
+    </section>
+
+    <!-- Statistik Real-time -->
+    <section class="stats py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Statistik Laporan</h2>
+            <div class="row text-center">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 id="masuk">0</h3>
+                            <p>Laporan Masuk</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 id="diproses">0</h3>
+                            <p>Dalam Proses</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 id="selesai">0</h3>
+                            <p>Selesai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alur Pengaduan -->
+    <section class="alur py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Alur Pengaduan</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <div class="step">
+                        <i class="bi bi-pencil-square fs-1 text-primary"></i>
+                        <h5>1. Isi Formulir</h5>
+                        <p>Lengkapi detail laporan Anda.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step">
+                        <i class="bi bi-check-circle fs-1 text-success"></i>
+                        <h5>2. Verifikasi</h5>
+                        <p>Laporan diverifikasi oleh admin.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step">
+                        <i class="bi bi-gear fs-1 text-warning"></i>
+                        <h5>3. Proses</h5>
+                        <p>Laporan diproses oleh pihak sekolah.</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="step">
+                        <i class="bi bi-trophy fs-1 text-info"></i>
+                        <h5>4. Selesai</h5>
+                        <p>Laporan diselesaikan dan feedback diberikan.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest News -->
+    <section class="news py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Pengumuman Terbaru</h2>
+            <div class="alert alert-info">
+                <strong>Tindak Lanjut:</strong> Sekolah telah menangani 50 laporan fasilitas bulan ini dengan perbaikan toilet dan ruang kelas.
+            </div>
+        </div>
+    </section>
+
+    <!-- FAB -->
+    <div class="fab">
+        <a href="https://wa.me/085710944357" class="btn btn-success btn-lg rounded-circle">
+            <i class="bi bi-whatsapp"></i>
+        </a>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
